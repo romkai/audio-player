@@ -1,4 +1,4 @@
-# audio5
+# audio-player (тестовое задание) 
 
 ## Project setup
 ```

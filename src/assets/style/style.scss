@@ -1,0 +1,63 @@
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+}
+body {
+	background-image: url("@/assets/images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 100px 24px;
+	@media screen and (max-width: 1024px) {
+		padding: 36px 12px;
+	}
+	@media screen and (max-width: 767px) {
+		padding: 24px 8px;
+	}
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.icon {
+	font-family: "Material Icons";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: "liga";
+}
+
+.custom-scroll {
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+		border-radius: 8px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: rgb(18 108 146 / 50%);
+		border-radius: 8px;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background: rgb(18 108 146 / 90%);
+	}
+}
