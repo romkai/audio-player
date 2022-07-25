@@ -57,6 +57,8 @@ export default class AudioPlayer extends Vue {
   nextTrack() {
     if (this.activeIndex < this.tracks.length - 1) {
       this.activeIndex += 1;
+    } else {
+      this.activeIndex = this.tracks.length ? 0 : -1;
     }
   }
 
